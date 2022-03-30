@@ -19,10 +19,10 @@ public class WeatherController : Controller
     }
 
     [HttpPost]
-    public async Task<Forecast> Index(AddressInput input) {
+    public async Task<List<ForecastPeriod>> Index(AddressInput input) {
         var location = await GetLocationAsync(input);
         var forecast = await GetPointWeatherAsync(location);
-        return forecast;
+        return forecast.properties.periods;
     }
 
     private async Task<LatLng> GetLocationAsync(AddressInput input)

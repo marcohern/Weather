@@ -1,2 +1,32 @@
 <h1>Type Address with City/State/Zip</h1>
-<input id="address" name="address" /><button>Get Weather</button>
+<form>
+    <div class="form-group">
+        <label for="address">Address *</label>
+        <input class="form-control" id="address" aria-describedby="addressHelp" placeholder="enter street address">
+        <small id="addressHelp" class="form-text text-muted">Example: 1600 Amphitheatre Pkwy</small>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="city">City</label>
+                <input class="form-control" id="city" aria-describedby="cityHelp" placeholder="enter city name">
+                <small id="cityHelp" class="form-text text-muted">Example: CA</small>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="state">State</label>
+                <input class="form-control" id="state" aria-describedby="stateHelp" placeholder="enter state name">
+                <small id="stateHelp" class="form-text text-muted">Example: Mountain View</small>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="zip">Zip</label>
+                <input class="form-control" id="zip" aria-describedby="zipHelp" placeholder="enter zip">
+                <small id="zipHelp" class="form-text text-muted">Example: 94043</small>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="button" (click)="getWeather()">Get Weather</button>
+</form>

@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPage implements OnInit {
 
-  constructor() { }
+  public address:string = '';
+  public city:string = '';
+  public state:string = '';
+  public zip:string = '';
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+    
   }
 
   getWeather(): void {

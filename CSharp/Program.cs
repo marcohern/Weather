@@ -9,11 +9,8 @@ RewriteOptions rewriteOptions = new RewriteOptions().AddRewrite("/", "index.html
                 
 var app = builder.Build();
 app.UseStaticFiles();
-//app.UseRewriter(rewriteOptions);
-//app.UseDefaultFiles();
 
 //app.MapGet("/", () => "Hello World!");
 
 app.MapControllers();
-
 app.Run();

@@ -19,7 +19,7 @@ The CSharp portion is an API that itself queries 2 remote api's:
 6. cd CSharp
 7. You may need to update nuget packages beforehand, I dont remember the command. I suspect the build will do that but im not sure, and im too lazy to test.
 8. you may click on the Run & Debug tab of vscode, then click on the green play button to start a web server
-9. The app should open on your default browser at this point.
+9. The app should open on your default browser at this point. If not, you may open the url: http://localhost:7025/index.html, or just add the index.html to the address.
 
 ## Use
 

@@ -25,6 +25,6 @@ The CSharp portion is an API that itself queries 2 remote api's:
 Just type in an address (required) and a optionally a city, state or zip.
 Click the Get Weather button to receive a forecast of the location. Not all locations work, so try a US city like in California or New York.
 
-No validations are applied, so, use a certified Anti-Error Radiation suit
+No validations are applied, so, use a certified Anti-Error Radiation suit to avoid Acute Error Frustration Radiation sickness.
 
 Enjoy!

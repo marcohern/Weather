@@ -2,7 +2,7 @@
 
 A simple weather forecast system written in CSharp and Angular.
 
-The SCharp portion is an API that itself queries 2 remote api's:
+The CSharp portion is an API that itself queries 2 remote api's:
 - https://geocoding.geo.census.gov: Turns addresses into earth coordinates.
 - https://api.weather.gov: Determines the weather in the area specified by given earth coordinates.
 

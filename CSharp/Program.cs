@@ -8,9 +8,9 @@ builder.Services.AddMvc();
 RewriteOptions rewriteOptions = new RewriteOptions().AddRewrite("/", "index.html", true);
                 
 var app = builder.Build();
-app.UseRewriter(rewriteOptions);
-app.UseDefaultFiles();
 app.UseStaticFiles();
+//app.UseRewriter(rewriteOptions);
+//app.UseDefaultFiles();
 
 //app.MapGet("/", () => "Hello World!");
 

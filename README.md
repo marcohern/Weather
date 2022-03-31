@@ -8,7 +8,7 @@ The SCharp portion is an API that itself queries 2 remote api's:
 
 ## Installation
 
-1. Download the source code to a folder, for example c:/src/Weather.
+1. Download/clone the source code to a folder, for example c:/src/Weather.
 1. Open the c:/src/Weather folder with vscode.
 1. You can start by building the angular app first:
   1. cd Angular
@@ -20,7 +20,7 @@ The SCharp portion is an API that itself queries 2 remote api's:
 1. NOTE: You may need to update nuget packages beforehand, I suspect the build will do that but im not sure, and im too lazy to test.
 1. The app should open on your default browser at this point.
 
-# Use
+## Use
 
 Just type in an address (required) and a optionally a city, state or zip.
 Click the Get Weather button to receive a forecast of the location. Not all locations work, so try a US city like in California or New York.

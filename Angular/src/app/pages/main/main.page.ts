@@ -14,6 +14,8 @@ export class MainPage implements OnInit {
   public state:string = '';
   public zip:string = '';
 
+  public forecast:WeatherForecast[] = [];
+
   constructor(private weatherService:WeatherService) {
   }
 
@@ -26,6 +28,7 @@ export class MainPage implements OnInit {
     this.weatherService.getWeatherForecastByAddress(this.address, this.city, this.state, this.zip)
       .subscribe((forecast:WeatherForecast[]) => {
         console.log(forecast);
+        this.forecast = forecast;
       });
   }
 

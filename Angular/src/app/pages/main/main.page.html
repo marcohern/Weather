@@ -30,4 +30,16 @@
     </div>
     <br/>
     <button class="btn btn-primary" type="button" (click)="getWeather()">Get Weather</button>
+    <div class="row">
+        <div class="col-md-1"><b>No</b></div>
+        <div class="col-md-5"><b>Date</b></div>
+        <div class="col-md-3"><b>Forecast</b></div>
+        <div class="col-md-3"><b>Temperature</b></div>
+    </div>
+    <div *ngFor="let item of forecast" class="row">
+        <div class="col-md-3">{{item.number}}</div>
+        <div class="col-md-3">{{item.startTime | date:'EEEE'}}, from {{item.startTime | date:'HH'}}h</div>
+        <div class="col-md-3">{{item.shortForecast}}</div>
+        <div class="col-md-3">{{item.temperature}} {{item.temperatureUnit}}</div>
+    </div>
 </form>

@@ -4,12 +4,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
 builder.Services.AddMvc();
-
-RewriteOptions rewriteOptions = new RewriteOptions().AddRewrite("/", "index.html", true);
-                
 var app = builder.Build();
-app.UseStaticFiles();
 
+DefaultFilesOptions options = new DefaultFilesOptions();
+options.DefaultFileNames.Clear();
+options.DefaultFileNames.Add("index.html");
+app.UseDefaultFiles(options);
+app.UseStaticFiles();
 //app.MapGet("/", () => "Hello World!");
 
 app.MapControllers();
